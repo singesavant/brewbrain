@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from .models import Hop, Aroma
 
-class HopSerializer(serializers.ModelSerializer):
+class HopSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Hop
 

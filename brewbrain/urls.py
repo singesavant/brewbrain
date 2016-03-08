@@ -22,6 +22,7 @@ from hop import views as hop_views
 
 router = routers.SimpleRouter()
 router.register(r'hops', hop_views.HopViewSet)
+router.register(r'aromas', hop_views.AromaViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
